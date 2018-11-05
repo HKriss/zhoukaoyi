@@ -20,12 +20,12 @@
                 @include align;
                 padding: 0 0 0 pxTorem(15px);
                 @include sizing;
-                button {
+                p {
                     width: pxTorem(90px);
                     height: 100%;
-                    border: 0;
-                    outline: none;
+                    line-height: pxTorem(40px);
                     font-size: pxTorem(14px);
+                    text-align: center;
                     border-radius: 0 pxTorem(10px) pxTorem(10px) 0;
                 }
                 input {
