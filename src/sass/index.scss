@@ -3,4 +3,36 @@
 .wrap {
     width: 100%;
     height: 100%;
+    .con {
+        width: 100%;
+        font-size: pxTorem(14px);
+        ul {
+            width: 100%;
+            padding: pxTorem(10px) pxTorem(20px) 0 pxTorem(20px);
+            @include sizing;
+            li {
+                width: 100%;
+                height: pxTorem(40px);
+                margin: pxTorem(20px) 0;
+                border: 1px solid #ccc;
+                border-radius: pxTorem(10px);
+                @include box_flex;
+                @include align;
+                padding: 0 0 0 pxTorem(15px);
+                @include sizing;
+                button {
+                    width: pxTorem(90px);
+                    height: 100%;
+                    border: 0;
+                    outline: none;
+                    font-size: pxTorem(14px);
+                    border-radius: 0 pxTorem(10px) pxTorem(10px) 0;
+                }
+                input {
+                    @include flex;
+                    height: pxTorem(40px);
+                }
+            }
+        }
+    }
 }
